@@ -9,5 +9,253 @@
 }
 :root{
   --main-color:#f5b041;
+  --second-color:#212f3d;
+
   
+}
+section{
+  padding: 100px;
+}
+/* Home css */
+#home{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+
+}
+
+/* .home-img img{
+  width: 50%;
+  height: 40%;
+ 
+} */
+/* .home-img img {
+  border-radius: 8px;
+  width: 70%;
+} */
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 15px 100px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(207, 202, 230, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--second-color);
+  font-size: 1.4rem;
+
+}
+ul{
+  display: flex;
+ 
+}
+ul li a{
+  padding: 10px 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 2px;
+  color: var(--second-color);
+}
+ul li a:hover{
+  background-color: var(--main-color);
+  border: none;
+}
+.home-text h1{
+ color: var(--second-color);
+ font-weight: 700;
+ font-size: 3.5rem;
+ line-height: 5.5rem;
+ margin-bottom: 2.5rem;
+}
+.home-text span{
+  color: var(--main-color);
+}
+.home-img{
+  width: 500px;
+  height: 500px;
+}
+.home-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Hire me css */
+.home-text a{
+  font-weight: 600;
+  padding: 12px 34px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.home-text a:hover{
+  background: var(--second-color);
+  box-shadow: 0 10px 34px rgba(0, 0,0, 0.14);
+}
+.social{
+  display: flex;
+  position: absolute;
+  bottom: 8%;
+  left: 144px;
+}
+.social i{
+ margin-right: 24px;
+ font-size: 24px;
+ color: var(--second-color);
+
+}
+.social i:hover{
+  background: var(--main-color);
+
+}
+.heading{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.heading h2{
+  color: var(--second-color);
+  border-bottom: 3px solid var(--second-color);
+  font-size: 1.8rem;
+margin:0 505px ;
+
+}
+.heading p{
+  color: var(--second-color);
+  margin-top: 0.5rem;
+}
+.about_img{
+  width: 320px;
+  height: 500px;
+}
+.about_img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.about_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_text{
+  width: 500px;
+  justify-content: center;
+}
+.about_text h1{
+  color: var(--second-color);
+  font-size: 22px;
+}
+.about_text p{
+  color:var(--second-color) ;
+  line-height: 1.8rem;
+  text-align: justify;
+  margin: 5px 0 24px;
+}
+.about_text a{
+  color: #fff;
+  padding: 10px 20px;
+  background: var(--main-color);
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+
+}
+.about_text a:hover{
+  background: var(--second-color);
+  box-shadow: 0 10px 34px rgba(0, 0,0, 0.14);
+}
+.services-content{
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ 
+}
+.box{
+padding: 40px 20px;
+background: var(--second-color);
+color: #fff;
+max-width: 320px;
+text-align: center;
+margin: 16px;
+
+}
+.box img{
+  height: 50px;
+}
+.box h1{
+  font-size: 22px;
+}
+.box p{
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 16px;
+
+}
+.box:hover{
+  transform: translateY(-10px);
+  background: var(--main-color);
+  transition: 0.5s;
+}
+.work-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+.work-text{
+  max-width: 500px;
+}
+.work-text h1{
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: var(--second-color);
+}
+.work-text p{
+  font-size: 1rem;
+  color: var(--second-color);
+  line-height: 2rem;
+  text-align: justify;
+  margin: 5px 0 24px;
+}
+.work-text a{
+  color: #fff;
+  padding: 10px 20px;
+  background: var(--main-color);
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+
+}
+.work-text a:hover{
+  background: var(--second-color);
+  box-shadow: 0 10px 40px rgba(0, 0,0, 0.14);
+}
+.work-img{
+  height: 500px;
+  width: 320px;
+}
+.work-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
 }
