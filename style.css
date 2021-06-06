@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration:none;
   box-sizing:border-box;
+  scroll-behavior: smooth;
 }
 :root{
   --main-color:#f5b041;
@@ -259,3 +260,109 @@ margin: 16px;
   object-fit: contain;
   object-position: center;
 }
+/* contact */
+#contact{
+  background:var(--second-color) ;
+
+
+
+}
+.heading.color h2{
+  color: #fff;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #fff;
+}
+.color p{
+  color: #fff;
+
+}
+.contact-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-form{
+width: 360px;
+ margin-top: 4rem;
+}
+.contact-form input, .contact-form textarea{
+  
+
+  width: 100%;
+  font-size: 15px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+  color: var(--second-color);
+  letter-spacing: 1px;
+}
+.contact-form textarea{
+  resize: none;
+  height: 200px;
+}
+.contact-btn{
+  max-width: 100px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.app{
+  max-width: 360px;
+
+}
+.app h2{
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 5px 0px 20px;
+
+}
+.app i{
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin: 10px;
+}
+.app i:hover{
+  transform: translateY(-10px);
+  transition: 0.5s;
+
+}
+.copyright {
+ text-align: center;
+  color: #fff;
+  background: var(--second-color);
+  padding: 20px;
+ 
+}
+/* making responsive */
+@media (max-width:991px) {
+nav{
+  padding: 10px 50px;
+  z-index: 1000px;
+}
+.menu{
+  position: fixed;
+  top: 50px;
+  right: 100%;
+  display: block;
+  padding: 100px 50px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: var(--second-color);
+  transition: 0.5s;
+  z-index: 999px;
+  border-top: 1px solid rgba(0, 0,0, 0.24);
+}
+  
+}
+
+
